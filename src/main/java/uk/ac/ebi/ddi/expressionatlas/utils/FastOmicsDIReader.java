@@ -1,7 +1,6 @@
 package uk.ac.ebi.ddi.expressionatlas.utils;
 
 import org.codehaus.stax2.XMLInputFactory2;
-import uk.ac.ebi.ddi.xml.validator.parser.model.CrossReferences;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
 
 import javax.xml.stream.XMLStreamConstants;
@@ -11,9 +10,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by yperez on 24/06/2016.

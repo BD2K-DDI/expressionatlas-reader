@@ -2,8 +2,6 @@ package uk.ac.ebi.ddi.expressionatlas.utils;
 
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
-import java.util.List;
-
 /**
  * @author ypriverol
  */
