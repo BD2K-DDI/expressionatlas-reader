@@ -57,7 +57,7 @@ public class FastOmicsDIReader {
 
         List<Entry> elements = new ArrayList<>();
 
-        FileInputStream fileInputStream = null;
+        FileInputStream fileInputStream;
         try {
 
             fileInputStream = new FileInputStream(source);
