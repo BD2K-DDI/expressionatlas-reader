@@ -3,11 +3,11 @@ package uk.ac.ebi.ddi.expressionatlas;
 import org.apache.commons.cli.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import uk.ac.ebi.ddi.ddidomaindb.dataset.DSField;
 import uk.ac.ebi.ddi.expressionatlas.utils.FastOmicsDIReader;
 import uk.ac.ebi.ddi.xml.validator.parser.OmicsXMLFile;
 import uk.ac.ebi.ddi.xml.validator.parser.marshaller.OmicsDataMarshaller;
 import uk.ac.ebi.ddi.xml.validator.parser.model.*;
-import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.io.File;
 
@@ -98,7 +98,7 @@ public class GenerateExpressionAtlasFile {
             Set<String> geneSet = genes.parallelStream().filter(geneEntry -> (geneEntry.getCrossReferences() != null && geneEntry.getCrossReferences().containsValue(entry.getId())))
                     .collect(Collectors.mapping(Entry::getId, Collectors.toSet()));
 
-            entry.addCrossReferenceValue(Field.ENSEMBL_EXPRESSION_ATLAS.getName(), geneSet);
+            entry.addCrossReferenceValue(DSField.CrossRef.ENSEMBL_EXPRESSION_ATLAS.getName(), geneSet);
         });
 
         database.setEntryCount(entries.size());
