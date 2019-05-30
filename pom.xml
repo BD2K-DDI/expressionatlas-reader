@@ -10,13 +10,13 @@
     
     <groupId>uk.ac.ebi.ddi.expressionatlas</groupId>
     <artifactId>expressionatlas-cli</artifactId>
-    <version>0.1.1</version>
+    <version>0.1.2-SNAPSHOT</version>
 
     <scm>
         <connection>scm:git:github.com/OmicsDI/expressionatlas-reader.git</connection>
         <developerConnection>scm:git:git@github.com:OmicsDI/expressionatlas-reader.git</developerConnection>
         <url>https://github.com/OmicsDI/expressionatlas-reader.git</url>
-        <tag>expressionatlas-cli-0.1.1</tag>
+        <tag>expressionatlas-reader-0.1.1</tag>
     </scm>
 
 
